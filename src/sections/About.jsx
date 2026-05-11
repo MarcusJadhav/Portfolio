@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { stats, personalInfo } from '../data/portfolio';
 
@@ -36,14 +35,14 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="aspect-square rounded-[3rem] overflow-hidden glass p-4">
-            <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
+          <div className="aspect-square rounded-[3rem] overflow-hidden glass p-4 bg-gradient-to-br from-accent-blue/10 to-accent-purple/10">
+            <div className="w-full h-full rounded-[2rem] overflow-hidden relative bg-zinc-900">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
-                alt="Profile" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                src={personalInfo.profileImage} 
+                alt={personalInfo.name} 
+                className="w-full h-full object-cover object-center transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
           </div>
           {/* Decorative elements */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { ChevronDown, Mail, ArrowRight } from 'lucide-react';
+import { Github, Linkedin } from '../components/BrandIcons';
 import { personalInfo } from '../data/portfolio';
 import ResumeDropdown from '../components/ResumeDropdown';
 
@@ -19,6 +20,21 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <div className="flex justify-center mb-8">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+              className="w-24 h-24 rounded-full p-1 glass relative overflow-hidden"
+            >
+              <img 
+                src={personalInfo.profileImage} 
+                alt={personalInfo.name} 
+                className="w-full h-full rounded-full object-cover"
+              />
+            </motion.div>
+          </div>
+
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-accent-blue uppercase glass rounded-full">
             Available for new opportunities
           </span>

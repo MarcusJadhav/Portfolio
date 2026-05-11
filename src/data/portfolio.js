@@ -21,6 +21,7 @@ export const personalInfo = {
   github: "https://github.com/MarcusJadhav/",
   linkedin: "https://www.linkedin.com/in/marcus-jadhav/",
   resume: "/MarcusJadhav-Resume.pdf",
+  profileImage: "/profile.png", // Updated to .png
 };
 
 export const skills = [
@@ -49,7 +50,7 @@ export const projects = [
     longDescription: "A comprehensive solution for educational institutions to manage students, staff, and curriculum efficiently.",
     tech: ["Java 17", "Spring Boot 3", "React.js", "JWT", "Microservices", "MySQL"],
     image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1000",
-    github: "#",
+    github: "https://github.com/MarcusJadhav/EduManage",
     live: "#"
   },
   {
@@ -59,23 +60,23 @@ export const projects = [
     longDescription: "A modern, responsive travel platform showcasing destinations and booking services.",
     tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1000",
-    github: "#",
+    github: "https://github.com/MarcusJadhav/BeingRider-project-js-",
     live: "#"
   }
 ];
 
 export const education = [
   {
-    degree: "Master of Computer Science",
-    institution: "Your University Name",
-    duration: "2022 - 2024",
-    description: "Specialized in Software Engineering and Distributed Systems."
+    degree: "Master of Computer Science (MCS)",
+    institution: "Modern College of Arts, Science and Commerce, Pune",
+    duration: "2024 - Pursuing",
+    description: "Current focus on advanced computing. Achievements: Year 1 (Sem 1 & 2): 78%, Year 2 Sem 3: 76.9%."
   },
   {
-    degree: "Bachelor of Computer Science",
-    institution: "Your University Name",
-    duration: "2019 - 2022",
-    description: "Foundational knowledge in algorithms, data structures, and web development."
+    degree: "Bachelor of Computer Science (BCS)",
+    institution: "Padmashri Vikhe Patil College, Pravaranagar",
+    duration: "2021 - 2024",
+    description: "Foundational computer science studies. Graduated with 8.60 CGPA."
   },
   {
     degree: "AWS Cloud Foundations Certification",
